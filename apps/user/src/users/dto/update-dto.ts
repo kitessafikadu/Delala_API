@@ -1,6 +1,7 @@
-import { PartialType } from '@nestjs/mapped-types';
-import { CreateDto } from './create-dto';
-
-export class UpdateDto extends PartialType(CreateDto) {
-  id: number;
+export class UpdateUserDto {
+  fullName?: string;
+  phoneNumber?: string;
+  userStatus?: 'ACTIVE' | 'INACTIVE' | 'DEACTIVATED';
+  address?: string;
+  profilePicture?: string;
 }
