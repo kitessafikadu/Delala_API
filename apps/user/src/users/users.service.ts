@@ -3,7 +3,7 @@ import { CreateDto } from './src/dto/create-..dto';
 import { UpdateDto } from './src/dto/update-..dto';
 
 @Injectable()
-export class Service {
+export class UsersService {
   create(createDto: CreateDto) {
     return 'This action adds a new ';
   }
